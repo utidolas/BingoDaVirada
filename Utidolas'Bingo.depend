@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1737186739 source:g:\meus documentos\documentos\professional\programming\c\utidolas'bingo\utidolas'bingo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<unistd.h>
+
