@@ -75,7 +75,7 @@ int main()
     randomBingoCard(cartelaDeBingo);
     displayMatrix(cartelaDeBingo);
 
-    // Drawing each x seconds
+    // Drawing each x secondsb
     for(int i = 0; i < numbersToDraw; i++){
 
         int drawn = drawNumber(drawnNumbers);
@@ -87,10 +87,6 @@ int main()
                     matches++;
                     printf("%d. Numero sorteado: %d | Parabens, voce tem %d/24\n", i+1, drawn, matches);
 
-                    // marking for DRAWN number
-                    cartelaDeBingo[row][column] = 0;
-                    displayMatrix(cartelaDeBingo);
-
                     goto next_draw;
                 }
             }
@@ -99,13 +95,13 @@ int main()
         // If dont match
         printf("%d. Numero sorteado: %d\n", i+1, drawn);
         next_draw:;
-        usleep(500000); //500,000 microseconds
+        usleep(300000); //300,000 microseconds
     }
 
     if(matches == 24){
         printf("\nParabens voce ganhou NO BINGO SENA DA VIRADA DO UTIDOLAS MEU/MINHA GOSTOSO(A)!!!");
     }else{
-        printf("\nVC TEVE %d/24 PERDEU PERDEU KKKKKKKKKKK OTARIOOOO UUUUH PRA ELE PESSOAL UUUUUH", matches);
+        printf("\nVC TEVE %d/24 PERDEU PERDEU KKKKKKKKKKK UUUUH PRA ELE GENTEE UUUUUH", matches);
     }
 
     return 0;
